@@ -2,9 +2,12 @@
 
 ### Keksitty liiketoimintatarve
 
-Sääntelyvaatimusten määrä ja monimutkaisuus kasvavat nopeammin kuin valvojien kyky omaksua ja käsitellä niitä, mikä hidastaa päätöksentekoa ja kasvattaa virheriskiä.
-\
-Lähde: o3 – OpenAI
+Sääntelyvaatimusten määrä ja monimutkaisuus kasvaa hurjasti. 
+FinReg ESG-Agentti on tehty tehostamaan ESG-raporttien analysointia.
+
+Pohja-aineistona RAG-agentti voi käyttää esimerkiksi `/downloads/`-kansiossa löytyviä
+Finanssivalvonnan ja EBA:n aineistoja.
+
 
 ## Agentin prosessikaavio
 
