@@ -1,0 +1,7 @@
+azure-search-documents
+azure-storage-blob
+openai>
+python-docx
+python-dotenv
+beautifulsoup4
+tqdm

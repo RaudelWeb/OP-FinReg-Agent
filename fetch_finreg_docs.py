@@ -9,9 +9,7 @@ Käyttö:
     python fetch_finreg_docs.py --out ./downloads
 """
 import argparse
-import os
 import pathlib
-import re
 import sys
 from urllib.parse import urljoin
 
