@@ -1,7 +1,8 @@
 # FinReg ESG Agent
 
 ## Prosessi
-![Prosessikaavio])(./images/prosessikaavio.png)
+
+![Alt text](https://github.com/RaudelWeb/FIVA_FinReg_Copilot/blob/main/images/prosessikaavio.png?raw=true)
 
 ## Prerequisites
 
