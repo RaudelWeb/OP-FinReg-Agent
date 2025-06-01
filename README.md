@@ -19,8 +19,9 @@ Vaatimukset:
 - Azure-palvelut:
     - Azure Search Service (2 indeksiä: 1 indeksi määräyksille- ja ohjeille ja 1 indeksi raporteille)
     - Azure Blob Storage
-    - o3-mini deployment
-    - text-embedding-ada-002 deployment
+    - Azure OpenAI deploymentit
+        - o3-mini
+        - text-embedding-ada-002
 
 1. Asenna tarvittavat paketit
 `pip install -r requirements.txt`
