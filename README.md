@@ -1,52 +1,52 @@
-# FinReg ESG Agent
+# OP FinReg Agent
 
-### Keksitty liiketoimintatarve
+### Fictional Business Need
 
-Sääntelyvaatimusten määrä ja monimutkaisuus kasvaa hurjasti. 
-FinReg ESG-Agentti on tehty tehostamaan ESG-raporttien analysointia.
+The volume and complexity of regulatory requirements are growing rapidly.  
+The FinReg ESG Agent is designed to streamline the analysis of ESG reports.
 
-Pohja-aineistona RAG-agentti voi käyttää esimerkiksi `/downloads/`-kansiossa löytyviä
-Finanssivalvonnan ja EBA:n aineistoja.
+As its base data source in a RAG setup, the agent can use the Finanssivalvonta and EBA documents found in the `/downloads/` folder.
 
+## Agent Process Flow
 
-## Agentin prosessikaavio
+![Process Flow Diagram](https://github.com/RaudelWeb/FIVA_FinReg_Copilot/blob/main/images/prosessikaavio.png?raw=true)
 
-![Prosessikaavio](https://github.com/RaudelWeb/FIVA_FinReg_Copilot/blob/main/images/prosessikaavio.png?raw=true)
+## Installation
 
-## Asentaminen
+### Prerequisites
+- Python 3.9 or higher installed  
+- `git` available locally  
+- Access to environment variables (e.g. via a `.env` file)  
+- Azure resources:
+  - Azure Cognitive Search Service (2 indexes: one for regulations & guidelines, one for reports)
+  - Azure Blob Storage
+  - Azure OpenAI deployments:
+    - `o3-mini`
+    - `text-embedding-ada-002`
 
-Vaatimukset:
-- Python 3.9+ asennettuna
-- `git` paikallisesti
-- Pääsy ympäristömuuttujiin (esim. `.env`-tiedosto tai vastaava)
-- Azure-palvelut:
-    - Azure Search Service (2 indeksiä: 1 indeksi määräyksille- ja ohjeille ja 1 indeksi raporteille)
-    - Azure Blob Storage
-    - Azure OpenAI deploymentit
-        - o3-mini
-        - text-embedding-ada-002
+### Steps
 
-1. Asenna tarvittavat paketit
-`pip install -r requirements.txt`
-2. Luo .env tiedosto, jossa on seuraavat muuttujat:
-    ```
-    AZURE_OPENAI_ENDPOINT=https://<sinun‐openai‐endpoint>.openai.azure.com/
-    AZURE_OPENAI_KEY=<avaimesi>
-    AZURE_OPENAI_API_VERSION=2024-12-01-preview
-
-    SEARCH_ENDPOINT=https://<sinun‐search‐palvelu>.search.windows.net
-    SEARCH_KEY=<search‐avain>
-    SEARCH_IDX_NAME=<indeksin_nimi>
-    REGULATION_SEARCH_IDX_NAME=finreg-rag
-    REPORT_SEARCH_IDX_NAME=reports
-    REPORT_INDEXER_NAME=reports-indexer
+1. Install required Python packages:
     
-    EMBED_DEPLOY=text-embedding-ada-002
-    CHAT_DEPLOY=gpt-4o
-    
-    AZURE_STORAGE_CONN=<blob‐connection‐string>
-    BLOB_STORAGE_NAME=finregtstor
-   ```
+    ```bash
+    pip install -r requirements.txt
 
-
-
+2.	Create a .env file with the following variables:
+   
+       ```ini
+        AZURE_OPENAI_ENDPOINT=https://<your-openai-endpoint>.openai.azure.com/
+        AZURE_OPENAI_KEY=<your-key>
+        AZURE_OPENAI_API_VERSION=2024-12-01-preview
+        
+        SEARCH_ENDPOINT=https://<your-search-service>.search.windows.net
+        SEARCH_KEY=<your-search-key>
+        SEARCH_IDX_NAME=<index_name>
+        REGULATION_SEARCH_IDX_NAME=finreg-rag
+        REPORT_SEARCH_IDX_NAME=reports
+        REPORT_INDEXER_NAME=reports-indexer
+        
+        EMBED_DEPLOY=text-embedding-ada-002
+        CHAT_DEPLOY=o3-mini
+        
+        AZURE_STORAGE_CONN=<your-blob-connection-string>
+        BLOB_STORAGE_NAME=finregtstor
