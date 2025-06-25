@@ -18,7 +18,7 @@ As its base data source in a RAG setup, the agent can use the Finanssivalvonta a
 - `git` available locally  
 - Access to environment variables (e.g. via a `.env` file)  
 - Azure resources:
-  - Azure Cognitive Search Service (2 indexes: one for regulations & guidelines, one for reports)
+  - Azure AI Search Service (2 indexes: one for regulations & guidelines, one for reports)
   - Azure Blob Storage
   - Azure OpenAI deployments:
     - `o3-mini`
