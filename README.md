@@ -1,5 +1,9 @@
 # OP FinReg Agent
 
+### Presentation video (partially in Finnish)
+
+[https://supercut.ai/share/lopez/RLRQp_II-X-yR4HNWBYtkl](https://supercut.ai/share/lopez/RLRQp_II-X-yR4HNWBYtkl)
+
 ### Fictional Business Need
 
 The volume and complexity of regulatory requirements are growing rapidly.  
