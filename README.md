@@ -11,7 +11,7 @@ The FinReg ESG Agent is designed to streamline the analysis of ESG reports.
 
 As its base data source in a RAG setup, the agent can use the Finanssivalvonta and EBA documents found in the `/downloads/` folder.
 
-## Agent Process Flow
+## Agent Process Flow (in finnish to facilitate business context)
 
 ![Process Flow Diagram](https://github.com/RaudelWeb/FIVA_FinReg_Copilot/blob/main/images/prosessikaavio.png?raw=true)
 
