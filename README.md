@@ -4,6 +4,8 @@
 
 [https://supercut.ai/share/lopez/RLRQp_II-X-yR4HNWBYtkl](https://supercut.ai/share/lopez/RLRQp_II-X-yR4HNWBYtkl)
 
+[Watch presentation on YouTube](https://www.youtube.com/watch?v=B1JneUuknDk)
+
 ### Fictional Business Need
 
 The volume and complexity of regulatory requirements are growing rapidly.  
